@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "sql_import_deletionTest"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b1d94c68-aca4-48f1-80ed-c739e2886182"
+  }
+}

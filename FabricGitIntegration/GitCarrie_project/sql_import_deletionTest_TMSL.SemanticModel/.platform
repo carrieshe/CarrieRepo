@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "sql_import_deletionTest_TMSL"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "14bdbe27-fb47-4e7c-89de-a07335dbaa3a"
+  }
+}

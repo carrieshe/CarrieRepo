@@ -1,0 +1,72 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.65\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "55523f7c3e70bca5b5ec",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"6458c42e68f97f66c50d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.7211855104281,\"y\":103.97365532381998,\"z\":0,\"width\":606.9813391877059,\"height\":376.5532381997805,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Day\"}],\"Y\":[{\"queryRef\":\"CountNonNull(NewFactCurrencyRate.CurrencyKey)\"}],\"Series\":[{\"queryRef\":\"NewFactCurrencyRate.AverageRate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"n\",\"Entity\":\"NewFactCurrencyRate\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Name\":\"Variation\",\"Property\":\"CurrencyDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"CurrencyDate Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Name\":\"Variation\",\"Property\":\"CurrencyDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"CurrencyDate Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Name\":\"Variation\",\"Property\":\"CurrencyDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"CurrencyDate Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Name\":\"Variation\",\"Property\":\"CurrencyDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"CurrencyDate Day\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"CurrencyKey\"}},\"Function\":5},\"Name\":\"CountNonNull(NewFactCurrencyRate.CurrencyKey)\",\"NativeReferenceName\":\"CurrencyKey\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"AverageRate\"},\"Name\":\"NewFactCurrencyRate.AverageRate\",\"NativeReferenceName\":\"AverageRate\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 376.55,
+          "width": 606.98,
+          "x": 33.72,
+          "y": 103.97,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "cbee99f8db3d64f47dad",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"28937d29847ac87283a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.7211855104281,\"y\":103.97365532381998,\"z\":0,\"width\":567.6399560922064,\"height\":310.51591657519214,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Year\"},{\"queryRef\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Quarter\"},{\"queryRef\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Month\"},{\"queryRef\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Day\"},{\"queryRef\":\"Sum(NewFactCurrencyRate.AverageRate)\"},{\"queryRef\":\"CountNonNull(NewFactCurrencyRate.CurrencyKey)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"n\",\"Entity\":\"NewFactCurrencyRate\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Name\":\"Variation\",\"Property\":\"CurrencyDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"CurrencyDate Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Name\":\"Variation\",\"Property\":\"CurrencyDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"CurrencyDate Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Name\":\"Variation\",\"Property\":\"CurrencyDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"CurrencyDate Month\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Name\":\"Variation\",\"Property\":\"CurrencyDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"NewFactCurrencyRate.CurrencyDate.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"CurrencyDate Day\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"AverageRate\"},\"Name\":\"Sum(NewFactCurrencyRate.AverageRate)\",\"NativeReferenceName\":\"AverageRate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"CurrencyKey\"},\"Name\":\"CountNonNull(NewFactCurrencyRate.CurrencyKey)\",\"NativeReferenceName\":\"CurrencyKey\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 310.52,
+          "width": 567.64,
+          "x": 33.72,
+          "y": 103.97,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"78724ef3e6f784099d31\",\"layouts\":[{\"id\":0,\"position\":{\"x\":530.7571801566579,\"y\":99.00783289817231,\"z\":1000,\"width\":568.355091383812,\"height\":295.1436031331593,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Series\":[{\"queryRef\":\"NewFactCurrencyRate.EndOfDayRate\"}],\"Category\":[{\"queryRef\":\"NewFactCurrencyRate.AverageRate\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(NewFactCurrencyRate.CurrencyDate)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"n\",\"Entity\":\"NewFactCurrencyRate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"EndOfDayRate\"},\"Name\":\"NewFactCurrencyRate.EndOfDayRate\",\"NativeReferenceName\":\"EndOfDayRate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"AverageRate\"},\"Name\":\"NewFactCurrencyRate.AverageRate\",\"NativeReferenceName\":\"AverageRate\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"CurrencyDate\"}},\"Function\":5},\"Name\":\"CountNonNull(NewFactCurrencyRate.CurrencyDate)\",\"NativeReferenceName\":\"Count of CurrencyDate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"n\"}},\"Property\":\"CurrencyDate\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 295.14,
+          "width": 568.36,
+          "x": 530.76,
+          "y": 99.01,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

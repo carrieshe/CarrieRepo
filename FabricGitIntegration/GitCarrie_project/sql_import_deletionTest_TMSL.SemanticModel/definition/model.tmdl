@@ -1,0 +1,24 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["NewFactCurrencyRate"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.145.7707.1 (Main)+19fd5d18678cd6af44efdeaefb05a9e60ecbd645
+
+annotation PBI_ProTooling = ["DevMode","WebModelingEdit"]
+
+annotation __TEdtr = 1
+
+ref table NewFactCurrencyRate
+ref table DateTableTemplate_7beee4c5-ad9c-435c-8dac-7d6ee9ddf82e
+ref table LocalDateTable_ab009602-3804-42c1-9266-afe65a6913b9
+
+ref cultureInfo en-US
+

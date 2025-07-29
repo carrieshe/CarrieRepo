@@ -1,0 +1,5 @@
+relationship e36ab3ca-d0e0-401a-a715-bd595efcf9e1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: NewFactCurrencyRate.CurrencyDate
+	toColumn: LocalDateTable_ab009602-3804-42c1-9266-afe65a6913b9.Date
+

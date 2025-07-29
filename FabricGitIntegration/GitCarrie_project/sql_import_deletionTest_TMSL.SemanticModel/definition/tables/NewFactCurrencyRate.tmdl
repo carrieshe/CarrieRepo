@@ -1,0 +1,94 @@
+table NewFactCurrencyRate
+	lineageTag: 6b3481cc-1536-41b8-852d-4d2887c19f51
+
+	column AverageRate
+		dataType: double
+		lineageTag: a17a61b8-4b17-4f0c-b125-01202d6760ce
+		summarizeBy: sum
+		sourceColumn: AverageRate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CurrencyID
+		dataType: string
+		lineageTag: fa619b2d-c7a5-4922-855b-89cacdda4278
+		summarizeBy: none
+		sourceColumn: CurrencyID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrencyDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2461d057-5f94-4b2d-8e8b-2be789b4adf1
+		summarizeBy: none
+		sourceColumn: CurrencyDate
+
+		variation Variation
+			isDefault
+			relationship: e36ab3ca-d0e0-401a-a715-bd595efcf9e1
+			defaultHierarchy: LocalDateTable_ab009602-3804-42c1-9266-afe65a6913b9.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column EndOfDayRate
+		dataType: double
+		lineageTag: 79060277-e046-4653-9527-4a4dc151fdff
+		summarizeBy: sum
+		sourceColumn: EndOfDayRate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CurrencyKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 9c62d679-3473-4891-a7b9-7faaf3efb026
+		summarizeBy: count
+		sourceColumn: CurrencyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: ecf4506f-9bb3-4f96-8146-b20993b8813e
+		summarizeBy: count
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column NewCL = [DateKey]+0
+		formatString: 0
+		lineageTag: 21075547-9912-43ed-b631-53a846f2add3
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column = 1
+		formatString: 0
+		lineageTag: d1b21770-966b-4931-ab20-8cb5e4b8f01d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'New column created from Tabular editor' = 1
+		lineageTag: e58a2dd1-07e9-4fa4-bb2f-c6ce0f75df69
+
+	partition NewFactCurrencyRate = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("localhost"),
+				    AdventureWorksDW2022 = Source{[Name="AdventureWorksDW2022"]}[Data],
+				    dbo_NewFactCurrencyRate = AdventureWorksDW2022{[Schema="dbo",Item="NewFactCurrencyRate"]}[Data]
+				in
+				    dbo_NewFactCurrencyRate
+
+	annotation PBI_ResultType = Table
+

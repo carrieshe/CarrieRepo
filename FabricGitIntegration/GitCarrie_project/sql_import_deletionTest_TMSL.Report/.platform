@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "sql_import_deletionTest_TMSL"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "342f3535-382b-4faf-b30c-66a73b36bcdc"
+  }
+}
